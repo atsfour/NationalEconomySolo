@@ -2525,7 +2525,7 @@ PrivateSpace = (function(superClass) {
           return Game.work('private', index);
         } else if (Game.isSell) {
           index = Number($(this).attr('data-index'));
-          return Game.sellPrivate(index);
+          return Game.pushSellingBox(index);
         }
       });
     } else {
@@ -2535,7 +2535,7 @@ PrivateSpace = (function(superClass) {
           return Game.work('private', index);
         } else if (Game.isSell) {
           index = Number($(this).attr('data-index'));
-          return Game.sellPrivate(index);
+          return Game.pushSellingBox(index);
         }
       });
     }
